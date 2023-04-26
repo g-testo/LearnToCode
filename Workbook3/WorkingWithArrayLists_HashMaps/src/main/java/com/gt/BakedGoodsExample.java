@@ -6,17 +6,7 @@ import java.util.HashMap;
 
 public class BakedGoodsExample {
     public static void main(String[] args) {
-
-        HashMap<String, String> hashMap = new HashMap<String, String>();
-        hashMap.put("volcano", "This is the definition of a volcano");
-        System.out.println(hashMap.get("volcano"));
-
-
-
-
-
-//        getInventory();
-
+        getInventory();
     }
 
     public static ArrayList<BakedGood> getInventory(){

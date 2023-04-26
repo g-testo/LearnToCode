@@ -3,7 +3,7 @@ package com.gt;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Main {
+public class ArrayListCodeAlong {
     public static void main(String[] args) {
 
         ArrayList<String> arrayList = new ArrayList<String>();
