@@ -102,6 +102,7 @@ public class Main {
 
         } while(!subInput.equalsIgnoreCase("4"));
     }
+
     public static void displayAll(){
         for(int i=0; i<villains.size();i++){
             Villain currentVillain = villains.get(i);
