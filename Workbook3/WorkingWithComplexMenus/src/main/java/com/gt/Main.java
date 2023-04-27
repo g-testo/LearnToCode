@@ -42,7 +42,6 @@ public class Main {
                     break;
                 case "2":
                     handleListSubMenu();
-                    // Nest more commands
                     break;
                 case "3":
                     System.out.println("Exiting");
@@ -70,12 +69,6 @@ public class Main {
     }
 
     public static void handleListSubMenu(){
-        // 1) List all villain alphabetically
-        // 2) Search by name
-        // Prompt for name to search
-        // 3) Sorted by origin
-        // Prompt for the origin
-        // 4) Exit to main menu
 
         String subInput;
 
@@ -91,12 +84,19 @@ public class Main {
 
             switch(subInput){
                 case "1":
+                    displayAll();
+                    System.out.println("List all");
                     break;
                 case "2":
+                    searchByName();
+                    System.out.println("Search by name");
                     break;
                 case "3":
+                    displayAllSortByOrigin();
+                    System.out.println("Sort by origin");
                     break;
                 case "4":
+                    System.out.println("Back to main menu");
                     break;
                 default:
                     System.out.println("Invalid input!");
@@ -104,6 +104,9 @@ public class Main {
 
         } while(!subInput.equalsIgnoreCase("4"));
     }
+    public static void displayAll(){}
+    public static void searchByName(){}
+    public static void displayAllSortByOrigin(){}
 
 }
 
