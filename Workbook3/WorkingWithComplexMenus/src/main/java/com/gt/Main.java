@@ -48,9 +48,22 @@ public class Main {
         villains.add(magneto);
     }
     public static void recruitVillain(){
-        System.out.println("Villain Added");
-        // Prompt user for properties
-//        villains.add();
+        System.out.println("Please provide the properties of this new villain: ");
+
+        System.out.print("Name: ");
+        String villainName = scanner.nextLine();
+
+        System.out.print("Origin: ");
+        String origin = scanner.nextLine();
+
+        System.out.print("Motivation: ");
+        String motivation = scanner.nextLine();
+
+        Villain newVillain = new Villain(villainName, origin, motivation);
+
+        villains.add(newVillain);
+
+        System.out.println("Villain added");
     }
 
     public static void handleListSubMenu(){
