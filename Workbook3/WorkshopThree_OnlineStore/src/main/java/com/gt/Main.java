@@ -41,7 +41,7 @@ public class Main {
                     // Parse/Split the line on "|" and store in variable: Hint .split("\\|");
 
                     // Create variables that stores each property
-                        // int id
+                        // String id
                         // String name
                         // float price
 
@@ -68,7 +68,7 @@ public class Main {
         // Iterate through the cart
             // Print each item in cart one at a time
 
-    // Create sub-menu
+        // Create sub-menu
             // Initialize subInput variable for user input
             // Show prompt for user showing the possible options and asking for an input
             // Create do-while loop that runs unless the user enters "x"
@@ -88,7 +88,7 @@ public class Main {
 // Create product class
 
     // Initialize product properties:
-    // int id
+    // String id
     // String name
     // float price
 
