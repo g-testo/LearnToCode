@@ -3,7 +3,6 @@ package com.gt;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.regex.Pattern;
 
 public class BufferedReaderExercise {
     public static void main(String[] args){
@@ -15,7 +14,7 @@ public class BufferedReaderExercise {
             String input;
 
             while((input = bufferedReader.readLine()) != null){
-                String[] splitInput = input.split(Pattern.quote("|")); // [ "10", "Dana Wyatt", "52.5", "12.50" ]
+                String[] splitInput = input.split("\\|"); // [ "10", "Dana Wyatt", "52.5", "12.50" ]
 
                 int employeeIdInput = Integer.parseInt(splitInput[0]);
                 String employeeNameInput = splitInput[1];
