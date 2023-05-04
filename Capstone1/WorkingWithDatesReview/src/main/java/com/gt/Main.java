@@ -2,6 +2,7 @@ package com.gt;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Year;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
@@ -54,9 +55,6 @@ public class Main {
 //
 //        System.out.println(localDateTime);
 
-
-//        .compare
-
 //        1) Month To Date
 //        BeginningOfMonth Create a date LocalDate.now().getYear() + "-" LocalDate.now().getMonth() + "-" 00 + 00:00:00"
 //        givenDateTime > BeginningOfMonth
@@ -78,6 +76,42 @@ public class Main {
         // beginningOfCurrentYear = LocalDate.now().getYear() + "-01-01 00:00:00"
 
         // givenDateTime > beginningOfLastYear && givenDateTime < beginningOfCurrentYear
+
+
+//        .compare
+
+        String date = "2023-05-10";
+        String time = "10:13:25";
+        String dateTime = date + " " + time; // "2023-04-15 10:13:25"
+        // 1: Create a pattern for the date
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+//        2: Parse/convert the date using the created pattern
+        LocalDateTime transactionDateTime = LocalDateTime.parse(dateTime, dateTimeFormatter);
+
+//        1) Month To Date
+            LocalDateTime now = LocalDateTime.now();
+            int currentYear = now.getYear();
+            int currentMonth = now.getMonthValue();
+
+            int transactionYear = transactionDateTime.getYear();
+            int transactionMonth = transactionDateTime.getMonthValue();
+            if(currentYear == transactionYear && currentMonth == transactionMonth){
+                System.out.println("Magic!!!");
+            }
+
+
+
+
+
+//        LocalDateTime now = LocalDateTime.now();
+//        int comparison = transactionDateTime.compareTo(now);
+//        if(comparison > 0){
+//            System.out.println("Comes after");
+//        } else {
+//            System.out.println("Comes before");
+//        }
+//        System.out.println();
 
     }
 }
