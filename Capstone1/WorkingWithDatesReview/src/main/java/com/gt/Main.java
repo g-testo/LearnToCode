@@ -1,5 +1,8 @@
 package com.gt;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Year;
@@ -77,10 +80,29 @@ public class Main {
 
         // givenDateTime > beginningOfLastYear && givenDateTime < beginningOfCurrentYear
 
+        // 2023-04-10 | 10:13:25 | Bluetooth Speaker | Samsung | 9.99
+        // 2023-04-10 | 10:13:25 | Bluetooth Speaker | Samsung | 9.99
+        // 2023-04-10 | 10:13:25 | Bluetooth Speaker | Samsung | 9.99
+        // 2023-04-10 | 10:13:25 | Bluetooth Speaker | Samsung | 9.99
 
-//        .compare
+        // Read from file
+        try {
+            FileReader fileReader = new FileReader("./src/java/...");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+//            while(){
+//                lineFromFile "2023-04-10 | 10:13:25 | Bluetooth Speaker | Samsung | 9.99"
+                // Split it
+//                 transactionArray ["2023-04-10", "10:13:25", "Bluetooth Speaker", "Samsung", "9.99"]
+//                date: transactionArray[0]
+//                time: transactionArray[1]
+//                Transaction transaction = new Transaction();
+//            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
-        String date = "2023-05-10";
+
+        String date = "2023-04-10";
         String time = "10:13:25";
         String dateTime = date + " " + time; // "2023-04-15 10:13:25"
         // 1: Create a pattern for the date
@@ -96,10 +118,30 @@ public class Main {
 
             int transactionYear = transactionDateTime.getYear();
             int transactionMonth = transactionDateTime.getMonthValue();
+
             if(currentYear == transactionYear && currentMonth == transactionMonth){
-                System.out.println("Magic!!!");
+                System.out.println("The transaction is from the current month");
             }
 
+            ////////////////////////////////////////
+
+//        prevMonth = LocalDate.now().getYear() + "-" LocalDate.now().minusMonths(1).getMonth() + "-" 00 + 00:00:00"
+//        currentMonth = LocalDate.now().getYear() + "-" LocalDate.now().getMonth() + "-" 00 + 00:00:00"
+        int previousMonth = now.minusMonths(1).getMonthValue();
+        if(currentYear == transactionYear && previousMonth == transactionMonth){
+            System.out.println("The transaction is from last month");
+        }
+
+        // Year to date
+        if(currentYear == transactionYear){
+            System.out.println("The transaction is from the same year");
+        }
+
+        // Transactions from the prior year
+        int priorYear = now.minusYears(1).getYear();
+        if(priorYear == transactionYear){
+            System.out.println("The transaction is from the prior year");
+        }
 
 
 

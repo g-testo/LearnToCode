@@ -83,7 +83,7 @@ package com.gt;
 
 //Polya’s Third Principle: Carry out the plan
 
-public class Main {
+public class BeastFeast {
     public static void main(String[] args) {
         // Input: great blue heron, garlic naan
         boolean result1 = feast("great blue heron", "garlic naan");
