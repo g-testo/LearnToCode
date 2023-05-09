@@ -18,7 +18,6 @@ public class Main {
 //        User gregFullInstance = new User("Greg", "gtesto", "g@testo.com");
 
         int sum = OutsidePackage.add(10, 50);
-
     }
 }
 
