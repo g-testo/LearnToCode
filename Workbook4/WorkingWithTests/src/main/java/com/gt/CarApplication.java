@@ -9,10 +9,12 @@ public class CarApplication {
 class Car {
     private String brand;
     private String model;
+    private String owner;
 
-    public Car(String brand, String model) {
+    public Car(String brand, String model, String owner) {
         this.brand = brand;
         this.model = model;
+        this.owner = owner;
     }
 
     public String getBrand() {
@@ -31,9 +33,20 @@ class Car {
         this.model = model;
     }
 
-    // Get car description: brand & model
-    public String getDescription(){
+    public String getOwner() {
+        return owner;
+    }
 
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    // Get car description: brand & model
+    public String getCarDescription(){
         return String.format("Description: Brand: %s, Model: %s", brand, model);
+    }
+
+    public boolean isStringOwner(String owner){
+        return this.owner.equalsIgnoreCase(owner);
     }
 }
