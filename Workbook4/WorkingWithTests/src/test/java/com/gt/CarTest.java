@@ -41,9 +41,9 @@ class CarTest {
         Car juliansCar = new Car("", "", "Julian");
 
         // Assert
-        assertEquals(true, gregsCar.isStringOwner("Greg"));
-        assertEquals(true, scarletsCar.isStringOwner("Scarlet"));
-        assertEquals(true, juliansCar.isStringOwner("Julian"));
+        assertTrue(gregsCar.isStringOwner("Greg"));
+        assertTrue(scarletsCar.isStringOwner("Scarlet"));
+        assertTrue(juliansCar.isStringOwner("Julian"));
     }
 
     @Test
@@ -55,30 +55,55 @@ class CarTest {
         Car juliansCar = new Car("", "", "Julian");
 
         // Assert
-        assertEquals(false, gregsCar.isStringOwner("Scarlet"));
-        assertEquals(false, scarletsCar.isStringOwner("Julian"));
-        assertEquals(false, juliansCar.isStringOwner("Greg"));
+        assertFalse(gregsCar.isStringOwner("Scarlet"));
+        assertFalse(scarletsCar.isStringOwner("Julian"));
+        assertFalse(juliansCar.isStringOwner("Greg"));
     }
 
     @Test
     void accelerate_should_setSpeedHigherByAmount () {
         // Arrange
+        Car car = new Car("","","");
+        int increaseSpeed = 30;
+        int expected = 30;
+
         // Act
+        car.accelerate(increaseSpeed);
+
         // Assert
+        int actual = car.getSpeed();
+        assertEquals(expected, actual);
     }
 
     @Test
     void brake_should_setSpeedLowerByAmount() {
         // Arrange
+        Car car = new Car("","","");
+        car.accelerate(50);
+        int decreaseSpeed = 30;
+        int expected = 20;
+
         // Act
+        car.brake(decreaseSpeed);
+
         // Assert
+        int actual = car.getSpeed();
+        assertEquals(expected, actual);
     }
 
     @Test
     void brake_should_setSpeedToZeroWhenAmountIsGreaterThanSpeed() {
         // Arrange
+        Car car = new Car("","","");
+        int decreaseSpeed = 30;
+        int expected = 0;
+
         // Act
+        car.brake(decreaseSpeed);
+
         // Assert
+        int actual = car.getSpeed();
+        assertEquals(expected, actual);
     }
 
 }
