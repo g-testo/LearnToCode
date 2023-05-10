@@ -2,7 +2,11 @@ package com.gt;
 
 public class CarApplication {
     public static void main(String[] args) {
-
+        Car car1 = new Car("", "", "");
+        Car car2 = new Car("", "", "");
+        Car car3 = new Car("", "", "");
+        Car car4 = new Car("", "", "");
+        System.out.println(Car.numberOfCarPurchased);
     }
 }
 
@@ -11,12 +15,14 @@ class Car {
     private String model;
     private String owner;
     private int speed;
+    static int numberOfCarPurchased;
 
     public Car(String brand, String model, String owner) {
         this.brand = brand;
         this.model = model;
         this.owner = owner;
         this.speed = 0;
+        numberOfCarPurchased++;
     }
 
     public String getBrand() {
