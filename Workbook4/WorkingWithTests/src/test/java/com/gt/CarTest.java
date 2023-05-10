@@ -59,4 +59,26 @@ class CarTest {
         assertEquals(false, scarletsCar.isStringOwner("Julian"));
         assertEquals(false, juliansCar.isStringOwner("Greg"));
     }
+
+    @Test
+    void accelerate_should_setSpeedHigherByAmount () {
+        // Arrange
+        // Act
+        // Assert
+    }
+
+    @Test
+    void brake_should_setSpeedLowerByAmount() {
+        // Arrange
+        // Act
+        // Assert
+    }
+
+    @Test
+    void brake_should_setSpeedToZeroWhenAmountIsGreaterThanSpeed() {
+        // Arrange
+        // Act
+        // Assert
+    }
+
 }
