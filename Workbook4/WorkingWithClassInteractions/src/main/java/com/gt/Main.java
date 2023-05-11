@@ -10,10 +10,20 @@ public class Main {
         // Guest
         // Room
 
+        // hotel1 <> reservation1 <> guest1
+        // hotel1 <> reservation1 <> room1
+
         Hotel hotel1 = new Hotel(1);
         Reservation reservation1 = new Reservation(1);
         Guest guest1 = new Guest(1);
         Room room1 = new Room(1);
+
+        reservation1.setOwner(guest1);
+        reservation1.setRoom(room1);
+
+        hotel1.addReservation(reservation1);
+
+        System.out.println(hotel1);
     }
 }
 
@@ -22,7 +32,7 @@ class Hotel{
     public Hotel(int id){
         this.id = id;
     }
-    private ArrayList<Reservation> reservations;
+    private ArrayList<Reservation> reservations = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -36,8 +46,16 @@ class Hotel{
         return reservations;
     }
 
-    public void setReservations(ArrayList<Reservation> reservations) {
-        this.reservations = reservations;
+    public void addReservation(Reservation reservation){
+        this.reservations.add(reservation);
+    }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "id=" + id +
+                ", reservations=" + reservations +
+                '}';
     }
 }
 class Reservation{
@@ -72,6 +90,15 @@ class Reservation{
     public void setRoom(Room room) {
         this.room = room;
     }
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "id=" + id +
+                ", owner=" + owner +
+                ", room=" + room +
+                '}';
+    }
 }
 class Guest{
     private int id;
@@ -86,6 +113,13 @@ class Guest{
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "id=" + id +
+                '}';
+    }
 }
 class Room{
     private int id;
@@ -99,5 +133,12 @@ class Room{
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                '}';
     }
 }
