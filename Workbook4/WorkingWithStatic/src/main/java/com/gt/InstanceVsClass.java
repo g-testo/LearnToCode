@@ -1,9 +1,7 @@
 package com.gt;
 
-import java.util.ArrayList;
-
 // (Static vs instance) methods and variables
-public class Main {
+public class InstanceVsClass {
     public static void main(String[] args) {
         CounterCalculator counterCalculator1 = new CounterCalculator(); // Instances
         CounterCalculator counterCalculator2 = new CounterCalculator(); // Instances
