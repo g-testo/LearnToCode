@@ -2,7 +2,7 @@ package com.gt;
 
 import java.util.ArrayList;
 
-public class Main {
+public class HotelRelationshipExample {
     public static void main(String[] args) {
 
         // Hotel
@@ -29,10 +29,10 @@ public class Main {
 
 class Hotel{
     private int id;
+    private ArrayList<Reservation> reservations = new ArrayList<>();
     public Hotel(int id){
         this.id = id;
     }
-    private ArrayList<Reservation> reservations = new ArrayList<>();
 
     public int getId() {
         return id;
