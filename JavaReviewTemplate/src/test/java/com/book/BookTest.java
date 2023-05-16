@@ -1,4 +1,4 @@
-package com.gt;
+package com.book;
 
 import org.junit.jupiter.api.Test;
 
