@@ -19,6 +19,7 @@ public class OutdoorEquipmentStore extends Store{
     public String toString() {
         return "OutdoorEquipmentStore{" +
                 "sizeOfCampingSection='" + sizeOfCampingSection + '\'' +
+                "customers=" + super.getCustomers() +
                 '}';
     }
 }

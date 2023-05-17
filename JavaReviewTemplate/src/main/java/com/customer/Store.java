@@ -19,6 +19,9 @@ public class Store {
         this.name = name;
     }
 
+    public ArrayList<Customer> getCustomers(){
+        return this.customers;
+    }
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
