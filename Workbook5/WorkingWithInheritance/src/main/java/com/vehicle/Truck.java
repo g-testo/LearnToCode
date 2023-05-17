@@ -1,4 +1,4 @@
-package com.gt;
+package com.vehicle;
 
 public class Truck {
 }

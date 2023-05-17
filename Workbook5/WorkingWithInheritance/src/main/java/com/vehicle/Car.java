@@ -1,4 +1,4 @@
-package com.gt;
+package com.vehicle;
 
 public class Car extends Vehicle{
     private float trunkSize;

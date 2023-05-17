@@ -2,17 +2,11 @@ package com.gt;
 
 public class Main {
     public static void main(String[] args) {
-        // 4 Pillars of OOP
-            // Encapsulation
-            // Inheritance
+        CasinoHotel hardRock = new CasinoHotel(100);
+//        System.out.println(hardRock);
 
-        // System Design Concepts
-            // Relationships
-                // Blueprint class: Sport
-                    // Instances: lacrosse, soccer, football
-                // Related class:
-                    // Physical Education Class
+        Hostel hostel = new Hostel(10, 2, 30.5f);
 
-        Car car = new Car(4, "Blue", true, 10.5f, false);
+        System.out.println(hostel);
     }
 }
