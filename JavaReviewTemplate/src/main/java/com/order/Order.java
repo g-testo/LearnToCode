@@ -2,7 +2,7 @@ package com.order;
 
 import java.util.ArrayList;
 
-public class Order {
+public abstract class Order {
     private int id;
     private ArrayList<Item> items;
 
@@ -39,7 +39,7 @@ public class Order {
         }
 
         return total;
-    }
+    };
 
     @Override
     public String toString(){

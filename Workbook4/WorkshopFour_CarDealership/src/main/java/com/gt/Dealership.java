@@ -43,7 +43,15 @@ public class Dealership {
     }
 
     public ArrayList<Vehicle> getVehiclesByPrice(float min, float max) {
-        return new ArrayList<>();
+        ArrayList<Vehicle> vehiclesToDisplay = new ArrayList<>();
+
+        for(Vehicle vehicle: this.inventory){
+            if(vehicle.getPrice() > min && vehicle.getPrice() < max){
+                vehiclesToDisplay.add(vehicle);
+            }
+        }
+
+        return vehiclesToDisplay;
     }
 
     public ArrayList<Vehicle> getVehiclesByMakeModel(String make, String model) {
@@ -67,11 +75,11 @@ public class Dealership {
     }
 
     public ArrayList<Vehicle> getAllVehicles() {
-        return new ArrayList<>();
+        return this.inventory;
     }
 
     public void addVehicle(Vehicle vehicle){
-
+        this.inventory.add(vehicle);
     }
 
     public void removeVehicle(Vehicle vehicle){

@@ -5,6 +5,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+
+        UserInterface userInterface = new UserInterface();
+        userInterface.display();
+
+
 //        // This an example of how you can manually test most of your class functionality and relationships
 //        Dealership dealership = new Dealership("", "", "");
 //
@@ -22,10 +27,10 @@ public class Main {
 //        System.out.println(allVehicles);
 //        System.out.println(allVehiclesWithinPriceRange);
 
-        DealershipFileManager dealershipFileManager = new DealershipFileManager();
-        Dealership dealership = dealershipFileManager.getDealership();
-
-        System.out.println(dealership);
+//        DealershipFileManager dealershipFileManager = new DealershipFileManager();
+//        Dealership dealership = dealershipFileManager.getDealership();
+//
+//        System.out.println(dealership);
 
     }
 }
