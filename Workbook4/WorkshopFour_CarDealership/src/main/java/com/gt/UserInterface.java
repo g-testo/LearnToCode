@@ -17,12 +17,11 @@ public class UserInterface {
     private void init(){
         // Load dealership and inventory from a file
         this.dealership = dealershipFileManager.getDealership();
-
     }
 
     public void display(){
         init();
-        System.out.println(this.dealership);
+        System.out.println("Current Dealership: " + this.dealership);
         String input;
 
         do {
@@ -108,6 +107,10 @@ public class UserInterface {
         int vin = scanner.nextInt();
         System.out.print("Year: ");
         int year = scanner.nextInt();
+
+        // We are clearing the scanner
+        scanner.nextLine();
+
         System.out.print("Make: ");
         String make = scanner.nextLine();
         System.out.print("Model: ");
@@ -124,6 +127,10 @@ public class UserInterface {
         this.dealership.addVehicle(new Vehicle(vin,year,make,model,type,color,odometer,price));
 
         dealershipFileManager.saveDealership(this.dealership);
+
+        System.out.println("Vehicle added Successfully");
+        // We are clearing the scanner
+        scanner.nextLine();
     }
 
     public void processRemoveVehicleRequest(){

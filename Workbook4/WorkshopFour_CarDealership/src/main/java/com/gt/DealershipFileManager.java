@@ -2,6 +2,8 @@ package com.gt;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -11,10 +13,11 @@ import java.util.regex.Pattern;
 // back into the file in the same pipe-delimited format
 
 public class DealershipFileManager {
+    String dealershipFileLocation = "./src/main/java/com/gt/dealership.txt";
     public Dealership getDealership(){
 
         try {
-            FileInputStream dealershipFile = new FileInputStream("./src/main/java/com/gt/dealership.txt");
+            FileInputStream dealershipFile = new FileInputStream(dealershipFileLocation);
             Scanner scanner = new Scanner(dealershipFile);
 
             // Read dealership information from the first line in an external file
@@ -49,7 +52,30 @@ public class DealershipFileManager {
         }
     }
     public void saveDealership(Dealership dealership){
+
+        try {
+            FileWriter fileWriter = new FileWriter(dealershipFileLocation);
+            fileWriter.write(dealership.getName() + "|" + dealership.getAddress() + "|" + dealership.getPhone() + "\n");
+
+            for(Vehicle vehicle: dealership.getAllVehicles()){
+                fileWriter.write(
+                        vehicle.getVin() + "|" +
+                        vehicle.getYear() + "|" +
+                        vehicle.getMake() + "|" +
+                        vehicle.getModel() + "|" +
+                        vehicle.getVehicleType() + "|" +
+                        vehicle.getColor() + "|" +
+                        vehicle.getOdometer() + "|" +
+                        vehicle.getPrice() + "\n"
+                );
+            }
+            fileWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         // Write dealership information to an external file
+
+
     }
 
 }
