@@ -135,6 +135,19 @@ public class UserInterface {
 
     public void processRemoveVehicleRequest(){
         // Display all vehicles and allow user to select one to remove
-        System.out.println("Remove");
+        System.out.println("Please enter the vehicle number to remove: ");
+
+        ArrayList<Vehicle> allVehicles = this.dealership.getAllVehicles();
+        for(int i=0;i<allVehicles.size();i++){
+            System.out.println((i+1) + " " + allVehicles.get(i).toString());
+        }
+        int chosenVehicle = scanner.nextInt();
+
+        this.dealership.removeVehicle(chosenVehicle-1);
+
+        dealershipFileManager.saveDealership(this.dealership);
+
+        System.out.println("Successfully removed vehicle");
+        scanner.nextLine();
     }
 }
