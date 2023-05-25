@@ -23,13 +23,34 @@ public class Main {
 //        pair.swap();
 //        System.out.println(pair);
 
-        Pair<String> pairString = new Pair<>("First", "Second");
-        pairString.setLeft("Third");
-        Pair<Integer> pairInteger = new Pair<>(20, 25);
-        Pair<Boolean> pairBoolean = new Pair<>(true, false);
+//        Pair<String> pairString = new Pair<>("First", "Second");
+//        pairString.setLeft("Third");
+//
+//        Pair<Integer> pairInteger = new Pair<>(20, 25);
+//        Pair<Boolean> pairBoolean = new Pair<>(true, false);
+//
+//        HashMap<String, Integer> hashmap = new HashMap<>();
+
+        Wizard gandolf = new Wizard();
+        Wizard mirlin = new Wizard();
+
+        Pair<Magician> wizardPair = new Pair<>(gandolf, mirlin);
+
+        wizardPair.castMagic();
 
 
-        HashMap<String, Integer> hashMap = new HashMap<>();
+//        labeler("Greg", true);
 
+//        add(100, 300);
+    }
+
+    public static <T> void labeler(String name, T value){
+        System.out.println(name);
+        System.out.println(value);
+    }
+
+    public static <T extends Number> void add(T num1, T num2){
+        System.out.println(num1);
+        System.out.println(num2);
     }
 }

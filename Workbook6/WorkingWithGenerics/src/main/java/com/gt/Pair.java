@@ -1,6 +1,6 @@
 package com.gt;
 
-public class Pair<T> {
+public class Pair<T extends Magician> {
     private T left;
     private T right;
 
@@ -23,6 +23,11 @@ public class Pair<T> {
 
     public void setRight(T right) {
         this.right = right;
+    }
+
+    public void castMagic(){
+        this.left.performIllusion();
+        this.right.performIllusion();
     }
 
     @Override
