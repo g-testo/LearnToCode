@@ -9,16 +9,27 @@ public class MainApp
     static Turtle turtle = new Turtle(world,0, 0);
     public static void main(String[] args)
     {
-        turtle.setDelay(0.0);
-//        makeSquare(30, 1, Color.BLUE); // Enum
+        turtle.setDelay(0.001);
+
+
+//        makeSquare(30, Color.BLUE); // Enum
 //        turtle.turnRight(180);
-//        makeSquare(90, 2, Color.RED);
+//        makeSquare(90, Color.RED);
 
 //        makeTriangle(80, "left");
 //        turtle.turnRight(180);
 //        makeTriangle(30, "right");
 
-        double radius = 50;
+        turtle.penUp();
+        turtle.goTo(0, -25);
+
+        turtle.penDown();
+        makeCircle(25);
+        turtle.turnRight(90);
+
+    }
+
+    public static void makeCircle(double radius){
         double circumference = 2 * Math.PI * radius;
         double lineLength = circumference / 360;
 
@@ -26,8 +37,6 @@ public class MainApp
             turtle.forward(lineLength);
             turtle.turnLeft(1);
         }
-
-
     }
 
     public static void makeTriangle(int sideOfTriangle, String direction){
@@ -36,9 +45,8 @@ public class MainApp
         }
     }
 
-    public static void makeSquare(int sidesLength, int delay, Color color){
+    public static void makeSquare(int sidesLength, Color color){
         turtle.setColor(color);
-        turtle.setDelay(delay);
         for(int i=0;i<4;i++){
             turnAndMove(sidesLength, 90, "right");
         }
