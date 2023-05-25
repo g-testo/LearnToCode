@@ -9,28 +9,49 @@ public class MainApp
     static Turtle turtle = new Turtle(world,0, 0);
     public static void main(String[] args)
     {
+        turtle.setDelay(0.0);
+//        makeSquare(30, 1, Color.BLUE); // Enum
+//        turtle.turnRight(180);
+//        makeSquare(90, 2, Color.RED);
 
-        turtle.setDelay(2);
-        turtle.setColor(Color.BLUE);
+//        makeTriangle(80, "left");
+//        turtle.turnRight(180);
+//        makeTriangle(30, "right");
 
-        makeSquare();
+        double radius = 50;
+        double circumference = 2 * Math.PI * radius;
+        double lineLength = circumference / 360;
 
-        turtle.setColor(Color.BLACK);
-        turtle.turnRight(180);
+        for(int degrees = 360; degrees > 0; degrees--){
+            turtle.forward(lineLength);
+            turtle.turnLeft(1);
+        }
 
-        makeSquare();
 
     }
 
-    public static void makeSquare(){
-        for(int i=0;i<4;i++){
-            turnAndMove(75, 90);
+    public static void makeTriangle(int sideOfTriangle, String direction){
+        for(int i=0;i<3;i++){
+            turnAndMove(sideOfTriangle, 120, direction);
         }
     }
 
-    public static void turnAndMove(int forwardAmount, int turnDegrees){
+    public static void makeSquare(int sidesLength, int delay, Color color){
+        turtle.setColor(color);
+        turtle.setDelay(delay);
+        for(int i=0;i<4;i++){
+            turnAndMove(sidesLength, 90, "right");
+        }
+    }
+
+    public static void turnAndMove(int forwardAmount, int turnDegrees, String direction){
         turtle.forward(forwardAmount);
-        turtle.turnRight(turnDegrees);
-        turtle.setDelay(2);
+        if(direction.equalsIgnoreCase("right")){
+            turtle.turnRight(turnDegrees);
+        } else if(direction.equalsIgnoreCase("left")){
+            turtle.turnLeft(turnDegrees);
+        } else {
+            System.out.println("Direction not found");
+        }
     }
 }
