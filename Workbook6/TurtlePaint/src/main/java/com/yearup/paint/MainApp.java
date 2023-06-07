@@ -11,22 +11,48 @@ public class MainApp
     {
         turtle.setDelay(0.001);
 
-
-//        makeSquare(30, Color.BLUE); // Enum
+//        makeSquare(30); // Enum
 //        turtle.turnRight(180);
-//        makeSquare(90, Color.RED);
+//        makeSquare(90);
 
-//        makeTriangle(80, "left");
+//        makeEquilateralTriangle(80, "left");
 //        turtle.turnRight(180);
 //        makeTriangle(30, "right");
 
-        turtle.penUp();
-        turtle.goTo(0, -25);
+//        turtle.penUp();
+//        turtle.goTo(0, -25);
+//
+//        turtle.penDown();
+//        makeCircle(25);
+//        turtle.turnRight(90);
+        makeRectangle(30, 50);
+    }
 
-        turtle.penDown();
-        makeCircle(25);
-        turtle.turnRight(90);
+    public static void makeRectangle(int width, int height){
+        for(int i=0; i<4; i++){
+            int sideToDraw;
 
+            if(i%2==0){
+                sideToDraw = width;
+            } else {
+                sideToDraw = height;
+            }
+            turnAndMove(sideToDraw, 90, "right");
+//          turnAndMove(i%2==0 ? width: height, 90, "right");
+        }
+
+    }
+
+    public static void drawNeighborhood(){
+        for(int i=0;i<10;i++){
+            drawHouse(20);
+            turtle.goTo(turtle.getLocation().getX() + 20, 0);
+        }
+    }
+
+    public static void drawHouse(int side){
+        makeSquare(side);
+        makeEquilateralTriangle(side, "left");
     }
 
     public static void makeCircle(double radius){
@@ -39,14 +65,15 @@ public class MainApp
         }
     }
 
-    public static void makeTriangle(int sideOfTriangle, String direction){
+    public static void makeTriangle(int sideA, int sideB, int angleA, int angleB){}
+
+    public static void makeEquilateralTriangle(int sideOfTriangle, String direction){
         for(int i=0;i<3;i++){
             turnAndMove(sideOfTriangle, 120, direction);
         }
     }
 
-    public static void makeSquare(int sidesLength, Color color){
-        turtle.setColor(color);
+    public static void makeSquare(int sidesLength){
         for(int i=0;i<4;i++){
             turnAndMove(sidesLength, 90, "right");
         }
