@@ -69,11 +69,11 @@ public class Main {
 
 
 
-
-
 // Hotel
     // id (Primary Key)
     // name
+    // totalNumOfFloors
+    // totalOccupancy
 
 // Floor
     // id (Primary Key)
