@@ -4,34 +4,37 @@ import com.mysql.cj.jdbc.*;
 import com.mysql.jdbc.*;
 
 import java.sql.*;
+import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        String username = args[0];
+        String password = args[1];
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://ba4aff20914505:6884f4ee@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
+        Class.forName("com.mysql.cj.jdbc.Driver");
 
-
-            PreparedStatement preparedStatement = connection.prepareStatement(
-                    "SELECT * FROM hotels WHERE name LIKE ?"
-            );
-
-            preparedStatement.setString(1, "St%");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://" + username + ":" + password + "@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
 
 
-            ResultSet results = preparedStatement.executeQuery();
+        PreparedStatement preparedStatement = connection.prepareStatement(
+                "SELECT * FROM hotels WHERE name LIKE ?"
+        );
 
-            while(results.next()){
-                String hotel = results.getString("name");
-                System.out.println(hotel);
-            }
+        preparedStatement.setString(1, "St%");
 
-            connection.close();
 
-        } catch (ClassNotFoundException | SQLException e) {
-            throw new RuntimeException(e);
+        ResultSet results = preparedStatement.executeQuery();
+
+        while(results.next()){
+            String hotel = results.getString("name");
+            int totalFloors = results.getInt("totalFloors");
+            System.out.println(totalFloors);
+            System.out.println(hotel);
         }
+
+        results.close();
+        preparedStatement.close();
+        connection.close();
 
     }
 }
