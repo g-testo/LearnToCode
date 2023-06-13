@@ -5,52 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Workbook7/Workshop7CarDealershipDB/queries.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Workbook7/Workshop7CarDealershipDB/script.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/SimpleStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/test/java/com/gt/SimpleStrategyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/main/java/com/gt/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/test/java/com/gt/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.github/workflows/build.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.pre-commit-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/ApplicationMetadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/CommandLineArguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/test/java/com/gt/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/test/resources/com/gt/example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
