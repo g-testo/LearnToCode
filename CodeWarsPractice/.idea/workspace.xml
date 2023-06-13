@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ea59b87-cec6-4f24-9d3b-294ae04566c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gt/InsertDashes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Workbook8/WorkingWithJDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Workbook8/WorkingWithJDBC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/InsertDashes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/InsertDashes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

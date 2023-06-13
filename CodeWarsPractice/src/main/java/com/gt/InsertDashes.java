@@ -2,34 +2,42 @@ package com.gt;
 
 public class InsertDashes {
     public static void main(String[] args) {
-        // Convert num into String // "454793"
         String result = insertDash(454793);
         System.out.println(result);
     }
 
-    public static String insertDash(int num) { // 454793
+    public static String insertDash(int num) { // Input: 454793
+
+        // Convert num into String // "454793"
         String numStrings = Integer.toString(num);
 
+        // Split into array of string numbers
         String[] stringArr = numStrings.split("");
         // [ "4", "5", "4", "7", "9", "3" ];
 
+        // Create a string variable to store answer
         String strWithDashes = "";
 
-        for(int i=0;i < stringArr.length; i++){
-            // if current stringNum is odd and the next number is odd
-                // Add a dash
+        // Iterate through array of string nums
+        for(int i=0;i < stringArr.length; i++) {
 
-            boolean isNotLastEl = (i != stringArr.length-1);
-            boolean isCurrentNumOdd = Integer.parseInt(stringArr[i]) % 2 == 1;
-            boolean isNextNumOdd = Integer.parseInt(stringArr[i+1]) % 2 == 1;
-            if(isNotLastEl && isCurrentNumOdd && isNextNumOdd){
-                strWithDashes += "-";
-            }
+            boolean isLastEl = (i == stringArr.length-1);
 
             strWithDashes += stringArr[i];
-        }
 
+            if (isLastEl) return strWithDashes;
+
+            int currentNum = Integer.parseInt(stringArr[i]);
+            int nextNum = Integer.parseInt(stringArr[i + 1]);
+
+            boolean isCurrentNumOdd = currentNum % 2 == 1;
+            boolean isNextNumOdd = nextNum % 2 == 1;
+
+            // if current stringNum is odd and the next number is odd
+            if (isCurrentNumOdd && isNextNumOdd) {
+                strWithDashes += "-";
+            }
+        }
         return strWithDashes; // "4547-9-3"
     }
-
 }

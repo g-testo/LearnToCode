@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CodeWarsPractice/src/main/java/com/gt/InsertDashes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeWarsPractice/src/main/java/com/gt/InsertDashes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsPractice/src/main/java/com/gt/InsertDashes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
