@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +68,9 @@
       <updated>1686666014474</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

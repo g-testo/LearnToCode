@@ -10,7 +10,7 @@ public class Main {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            Connection connection = DriverManager.getConnection("dbc:mysql://ba4aff20914505:6884f4ee@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://ba4aff20914505:6884f4ee@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
             Statement statement = connection.createStatement();
 
             String query = "SELECT * FROM hotels;";
