@@ -11,11 +11,16 @@ public class Main {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection connection = DriverManager.getConnection("jdbc:mysql://ba4aff20914505:6884f4ee@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
-            Statement statement = connection.createStatement();
 
-            String query = "SELECT * FROM hotels;";
 
-            ResultSet results = statement.executeQuery(query);
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "SELECT * FROM hotels WHERE name LIKE ?"
+            );
+
+            preparedStatement.setString(1, "St%");
+
+
+            ResultSet results = preparedStatement.executeQuery();
 
             while(results.next()){
                 String hotel = results.getString("name");
