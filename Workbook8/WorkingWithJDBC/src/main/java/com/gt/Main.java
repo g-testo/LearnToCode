@@ -7,34 +7,40 @@ import java.sql.*;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        String username = args[0];
-        String password = args[1];
+    public static void main(String[] args) throws SQLException {
 
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet results = null;
+        try {
+            String username = args[0];
+            String password = args[1];
 
-        Connection connection = DriverManager.getConnection("jdbc:mysql://" + username + ":" + password + "@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
+            connection = DriverManager.getConnection("jdbc:mysql://" + username + ":" + password + "@us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
 
-        PreparedStatement preparedStatement = connection.prepareStatement(
-                "SELECT * FROM hotels WHERE name LIKE ?"
-        );
+            preparedStatement = connection.prepareStatement(
+                    "SELECT * FROM hotels WHERE name LIKE ?"
+            );
 
-        preparedStatement.setString(1, "St%");
+            preparedStatement.setString(1, "St%");
 
+            results = preparedStatement.executeQuery("jkdsjfklsdjkj");
 
-        ResultSet results = preparedStatement.executeQuery();
-
-        while(results.next()){
-            String hotel = results.getString("name");
-            int totalFloors = results.getInt("totalFloors");
-            System.out.println(totalFloors);
-            System.out.println(hotel);
+            while (results.next()) {
+                String hotel = results.getString("name");
+                int totalFloors = results.getInt("totalFloors");
+                System.out.println(totalFloors);
+                System.out.println(hotel);
+            }
+        } catch (SQLException | ClassNotFoundException e){
+            e.printStackTrace();
+        } finally {
+            if (results != null) results.close();
+            if (preparedStatement != null) preparedStatement.close();
+            if (connection != null) connection.close();
         }
-
-        results.close();
-        preparedStatement.close();
-        connection.close();
 
     }
 }
