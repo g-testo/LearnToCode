@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Workbook7/Workshop7CarDealershipDB/queries.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Workbook7/Workshop7CarDealershipDB/script.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/SimpleStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/java/com/gt/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVN_Archetype_Demo/src/test/java/com/gt/SimpleStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/main/java/com/gt/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../QuickStartDemo/src/test/java/com/gt/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.github/workflows/build.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/.pre-commit-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/ApplicationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/java/com/gt/CommandLineArguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/test/java/com/gt/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quickstart_demo/src/test/resources/com/gt/example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2R9d0coMagPeD5an6thE085krYp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.42988506"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="" />
+      <created>1686666014474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686666014474</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

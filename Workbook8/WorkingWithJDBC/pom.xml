@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gt</groupId>
-    <artifactId>ComprehensiveHotelExampleReview</artifactId>
-    <version>1.0.1</version>
+    <artifactId>WorkingWithJDBC</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -14,14 +14,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
-
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
+        </dependency>
+    </dependencies>
 
 </project>
-<!-- Java Version: 20.0.01 -->
-<!-- Java Version: 17.1.13 -->
-
-<!-- Java Version: 17.0.5 -->
-
-
-<!-- Java Version: 17.0.1  Major release, intermediate release, minor release(Patch) -->
