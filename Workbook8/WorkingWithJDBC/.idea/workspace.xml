@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CodeWarsPractice/src/main/java/com/gt/InsertDashes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,15 @@
     "project.structure.side.proportion": "0.42988506"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DataSourceJDBCConfig">
+    <configuration name="DataSourceJDBCConfig" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.gt.JDBC_DataSourceExample" />
+      <module name="WorkingWithJDBC" />
+      <option name="PROGRAM_PARAMETERS" value="ba4aff20914505 91a8d13d5b3ab0a" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCConfig" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.gt.Main" />
       <module name="WorkingWithJDBC" />
@@ -141,6 +153,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.JDBCConfig" />
+      <item itemvalue="Application.DataSourceJDBCConfig" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
