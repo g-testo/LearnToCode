@@ -13,11 +13,11 @@ import java.util.List;
 public class HotelDataManager {
     private BasicDataSource basicDataSource;
 
-    public HotelDataManager(BasicDataSource dataSource) {
-        this.basicDataSource = dataSource;
+    public HotelDataManager(BasicDataSource basicDataSource) {
+        this.basicDataSource = basicDataSource;
     }
 
-    public List<Hotel> getAllHotels() {
+    public List<Hotel> getAll() {
         List<Hotel> hotels = new ArrayList<>();
 
         String query = "SELECT * FROM hotels;";
@@ -43,4 +43,56 @@ public class HotelDataManager {
 
         return hotels;
     }
+
+    public Hotel getById(int id){
+        Hotel hotel = null;
+        String query = "SELECT * FROM hotels WHERE id=?;";
+
+        try (
+                Connection connection = this.basicDataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+
+            preparedStatement.setInt(1, id);
+
+            try(
+                    ResultSet resultSet = preparedStatement.executeQuery();
+            ){
+                if(resultSet.next()){
+                    int idFromDB = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    int totalFloors = resultSet.getInt("totalFloors");
+                    int totalOccupancy = resultSet.getInt("totalOccupancy");
+
+                    hotel = new Hotel(idFromDB, name, totalFloors, totalOccupancy);
+                } else {
+                    System.out.println("No hotel found with that id");
+                }
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return hotel;
+    }
+
+    public void create(Hotel hotel){
+
+    }
+
+    public void delete(int id){
+
+    }
+
+    public void update(int id, Hotel hotel){
+
+    }
+
+    // Create, Read, Update, Delete
+    // ReadAll, Read by id
+
+
+
+
 }

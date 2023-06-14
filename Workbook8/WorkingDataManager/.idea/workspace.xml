@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c737463-2b99-4d5f-a54b-d03606b4b4b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dealership/Dealership.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dealership/DealershipDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WorkingWithJDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingWithJDBC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WorkingWithJDBC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingWithJDBC/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WorkingWithJDBC/src/main/java/com/gt/JDBC_DataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingWithJDBC/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,10 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">

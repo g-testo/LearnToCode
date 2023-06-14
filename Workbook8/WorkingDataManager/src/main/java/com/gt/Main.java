@@ -17,8 +17,10 @@ public class Main {
 
         HotelDataManager hotelDataManager = new HotelDataManager(basicDataSource);
 
-        List<Hotel> hotels = hotelDataManager.getAllHotels();
+//        List<Hotel> hotels = hotelDataManager.getAll();
+//        System.out.println(hotels);
 
-        System.out.println(hotels);
+        Hotel hotel = hotelDataManager.getById(1);
+        System.out.println(hotel);
     }
 }
