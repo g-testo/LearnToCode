@@ -52,9 +52,7 @@ public class HotelDataManager {
                 Connection connection = this.basicDataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
         ) {
-
             preparedStatement.setInt(1, id);
-
             try(
                     ResultSet resultSet = preparedStatement.executeQuery();
             ){
