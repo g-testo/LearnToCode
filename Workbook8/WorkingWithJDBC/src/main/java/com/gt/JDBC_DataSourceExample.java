@@ -1,7 +1,6 @@
 package com.gt;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-
 import java.sql.*;
 
 public class JDBC_DataSourceExample {
@@ -17,18 +16,15 @@ public class JDBC_DataSourceExample {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
 
-        try (
+        try ( // Try-with-resources
                 Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM hotels;");
+                ResultSet resultSet = preparedStatement.executeQuery();
         ) {
 
-            try (
-                    ResultSet resultSet = preparedStatement.executeQuery()
-            ) {
-                while (resultSet.next()) {
-                    String name = resultSet.getString("name");
-                    System.out.println(name);
-                }
+            while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                System.out.println(name);
             }
 
         } catch (SQLException e) {
