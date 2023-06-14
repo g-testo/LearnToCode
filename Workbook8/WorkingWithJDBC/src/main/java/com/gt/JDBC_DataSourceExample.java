@@ -5,14 +5,13 @@ import java.sql.*;
 
 public class JDBC_DataSourceExample {
     public static void main(String[] args) {
+        BasicDataSource dataSource = new BasicDataSource();
 
         String username = args[0];
         String password = args[1];
 
-        BasicDataSource dataSource = new BasicDataSource();
 
         dataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
-
         dataSource.setUsername(username);
         dataSource.setPassword(password);
 

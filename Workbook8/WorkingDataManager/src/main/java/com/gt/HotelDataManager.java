@@ -1,6 +1,7 @@
 package com.gt;
 
-import javax.sql.DataSource;
+import org.apache.commons.dbcp2.BasicDataSource;
+
 import java.sql.Connection;
 
 import java.sql.PreparedStatement;
@@ -10,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HotelDataManager {
-    private DataSource dataSource;
+    private BasicDataSource basicDataSource;
 
-    public HotelDataManager(DataSource dataSource) {
-        this.dataSource = dataSource;
+    public HotelDataManager(BasicDataSource dataSource) {
+        this.basicDataSource = dataSource;
     }
 
     public List<Hotel> getAllHotels() {
@@ -22,7 +23,7 @@ public class HotelDataManager {
         String query = "SELECT * FROM hotels;";
 
         try (
-                Connection connection = dataSource.getConnection();
+                Connection connection = this.basicDataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
                 ResultSet resultSet = preparedStatement.executeQuery();
         ) {

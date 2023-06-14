@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee8ec37-4263-47fc-9a3c-dbb86614f132" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/src/main/java/com/gt/DataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CodeWarsPractice/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Library_JDBC_Example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingDataManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingDataManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingDataManager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingDataManager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/HotelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingDataManager/src/main/java/com/gt/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/JDBC_DataSourceExample.java" afterDir="false" />
