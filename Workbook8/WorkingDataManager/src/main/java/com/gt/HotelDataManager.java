@@ -105,32 +105,52 @@ public class HotelDataManager {
     }
 
     public void update(int id, Hotel hotel){
-
         // Create a query
         String query = "UPDATE hotels SET name=?, totalFloors=?, totalOccupancy=? WHERE id=?;";
 
+        // Make a connection / prepare statement
         try(
                 Connection connection = this.basicDataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
         ){
+            // Set parameters
             preparedStatement.setString(1, hotel.getName());
             preparedStatement.setInt(2, hotel.getTotalFloors());
             preparedStatement.setInt(3, hotel.getTotalOccupancy());
             preparedStatement.setInt(4, id);
 
+            // Execute prepared statement
             int rows = preparedStatement.executeUpdate();
+
+            // Print confirmation
             System.out.printf("Rows updated %d\n", rows);
 
         }catch (SQLException e) {
+            // Handle errors
             e.printStackTrace();
         }
     }
 
     public void delete(int id){
+        // Create a query
+        String query = "DELETE FROM hotels WHERE id=?;";
+        // Make a connection / prepare statement
+        try(
+                Connection connection = this.basicDataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ){
+            // Set parameters
+            preparedStatement.setInt(1, id);
 
+            // Execute prepared statement
+            int rows = preparedStatement.executeUpdate();
+
+            // Print confirmation
+            System.out.printf("Rows updated %d\n", rows);
+
+        }catch (SQLException e) {
+            // Handle errors
+            e.printStackTrace();
+        }
     }
-
-
-    // Create, Read, Update, Delete
-    // ReadAll, Read by id
 }

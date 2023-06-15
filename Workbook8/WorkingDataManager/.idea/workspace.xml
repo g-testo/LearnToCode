@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c737463-2b99-4d5f-a54b-d03606b4b4b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Hotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
     </list>

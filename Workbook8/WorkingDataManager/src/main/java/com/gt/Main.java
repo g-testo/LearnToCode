@@ -26,5 +26,12 @@ public class Main {
 //        Hotel hotel = new Hotel("Isaiah's Insane Island of Insanity", 3, 1112);
 //        hotelDataManager.create(hotel);
 
+//        hotel.setTotalFloors(5);
+//        hotelDataManager.update(14, hotel);
+
+        hotelDataManager.delete(14);
+
+
+
     }
 }
