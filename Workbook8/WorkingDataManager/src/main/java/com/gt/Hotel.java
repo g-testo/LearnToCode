@@ -6,6 +6,11 @@ public class Hotel {
     private int totalFloors;
     private int totalOccupancy;
 
+    public Hotel(String name, int totalFloors, int totalOccupancy) {
+        this.name = name;
+        this.totalFloors = totalFloors;
+        this.totalOccupancy = totalOccupancy;
+    }
     public Hotel(int id, String name, int totalFloors, int totalOccupancy) {
         this.id = id;
         this.name = name;

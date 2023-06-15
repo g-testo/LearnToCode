@@ -20,7 +20,11 @@ public class Main {
 //        List<Hotel> hotels = hotelDataManager.getAll();
 //        System.out.println(hotels);
 
-        Hotel hotel = hotelDataManager.getById(1);
-        System.out.println(hotel);
+//        Hotel hotel = hotelDataManager.getById(1);
+//        System.out.println(hotel);
+
+//        Hotel hotel = new Hotel("Isaiah's Insane Island of Insanity", 3, 1112);
+//        hotelDataManager.create(hotel);
+
     }
 }

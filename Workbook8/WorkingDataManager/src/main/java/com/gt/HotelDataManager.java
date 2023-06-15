@@ -2,11 +2,8 @@ package com.gt;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 
-import java.sql.Connection;
+import java.sql.*;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -89,16 +86,50 @@ public class HotelDataManager {
     }
 
     public void create(Hotel hotel){
+        String query = "INSERT INTO hotels(name, totalFloors, totalOccupancy) VALUES(?, ?, ?);";
 
+        try(
+                Connection connection = this.basicDataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ){
+            preparedStatement.setString(1,  hotel.getName());
+            preparedStatement.setInt(2, hotel.getTotalFloors());
+            preparedStatement.setInt(3, hotel.getTotalOccupancy());
+
+            int rows = preparedStatement.executeUpdate();
+            System.out.printf("Rows updated %d\n", rows);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void update(int id, Hotel hotel){
+
+        // Create a query
+        String query = "UPDATE hotels SET name=?, totalFloors=?, totalOccupancy=? WHERE id=?;";
+
+        try(
+                Connection connection = this.basicDataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ){
+            preparedStatement.setString(1, hotel.getName());
+            preparedStatement.setInt(2, hotel.getTotalFloors());
+            preparedStatement.setInt(3, hotel.getTotalOccupancy());
+            preparedStatement.setInt(4, id);
+
+            int rows = preparedStatement.executeUpdate();
+            System.out.printf("Rows updated %d\n", rows);
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void delete(int id){
 
     }
 
-    public void update(int id, Hotel hotel){
-
-    }
 
     // Create, Read, Update, Delete
     // ReadAll, Read by id

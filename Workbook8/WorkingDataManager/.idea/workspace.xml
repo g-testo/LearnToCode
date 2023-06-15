@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c737463-2b99-4d5f-a54b-d03606b4b4b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Hotel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HotelProjectConfig" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.gt.Main" />
