@@ -75,6 +75,19 @@ public class HotelDataManager {
         return hotel;
     }
 
+    public List<Hotel> searchByName(String nameToSearchBy){ // "Gr"
+        // SELECT * FROM hotels WHERE name LIKE 'Gr%';
+        return null;
+    }
+
+    public List<Hotel> filterByTotalOccupancy(int totalOccupancy, String comparator){
+        if(comparator.equalsIgnoreCase("greater")){
+            return null;
+        } else {
+            return null;
+        }
+    }
+
     public void create(Hotel hotel){
 
     }
@@ -89,8 +102,4 @@ public class HotelDataManager {
 
     // Create, Read, Update, Delete
     // ReadAll, Read by id
-
-
-
-
 }
