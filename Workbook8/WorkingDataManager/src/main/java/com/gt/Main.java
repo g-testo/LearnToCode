@@ -2,6 +2,7 @@ package com.gt;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 
+import javax.sound.midi.SysexMessage;
 import java.util.List;
 
 public class Main {
@@ -20,6 +21,12 @@ public class Main {
 //        List<Hotel> hotels = hotelDataManager.getAll();
 //        System.out.println(hotels);
 
+        // Search by "fun"
+//        List<Hotel> hotels = hotelDataManager.searchByName("fun");
+//        System.out.println(hotels);
+
+
+
 //        Hotel hotel = hotelDataManager.getById(1);
 //        System.out.println(hotel);
 
@@ -29,7 +36,10 @@ public class Main {
 //        hotel.setTotalFloors(5);
 //        hotelDataManager.update(14, hotel);
 
-        hotelDataManager.delete(14);
+//        hotelDataManager.delete(14);
+
+
+
 
 
 

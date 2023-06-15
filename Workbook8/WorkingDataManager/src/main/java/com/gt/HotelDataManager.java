@@ -72,8 +72,9 @@ public class HotelDataManager {
         return hotel;
     }
 
-    public List<Hotel> searchByName(String nameToSearchBy){ // "Gr"
-        // SELECT * FROM hotels WHERE name LIKE 'Gr%';
+    public List<Hotel> searchByName(String nameToSearchBy){ // "fun"
+        String query = "SELECT * FROM hotels WHERE name LIKE '%?%';";
+        // SELECT * FROM hotels WHERE name LIKE '%fun%';
         return null;
     }
 
