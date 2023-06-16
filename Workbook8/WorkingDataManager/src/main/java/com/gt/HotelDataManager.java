@@ -73,17 +73,77 @@ public class HotelDataManager {
     }
 
     public List<Hotel> searchByName(String nameToSearchBy){ // "fun"
-        String query = "SELECT * FROM hotels WHERE name LIKE '%?%';";
-        // SELECT * FROM hotels WHERE name LIKE '%fun%';
-        return null;
+        List<Hotel> hotelsFound = new ArrayList<>();
+
+        String query = "SELECT * FROM hotels WHERE name LIKE ?;";
+
+        // Create a connection / Make a prepared statement
+        try(
+            Connection connection = this.basicDataSource.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            // Set parameters for prepared statement
+            preparedStatement.setString(1, "%" + nameToSearchBy + "%");
+
+            try(
+                    // Execute prepared statement
+                    ResultSet resultSet = preparedStatement.executeQuery();
+            ) {
+                while (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    int totalFloors = resultSet.getInt("totalFloors");
+                    int totalOccupancy = resultSet.getInt("totalOccupancy");
+
+                    Hotel hotel = new Hotel(id, name, totalFloors, totalOccupancy);
+
+                    hotelsFound.add(hotel);
+                }
+            }
+
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        // return the result
+        return hotelsFound;
     }
 
-    public List<Hotel> filterByTotalOccupancy(int totalOccupancy, String comparator){
-        if(comparator.equalsIgnoreCase("greater")){
-            return null;
-        } else {
-            return null;
+    public List<Hotel> filterByLargerTotalOccupancy(int totalOccupancyParam){
+        List<Hotel> hotelsFound = new ArrayList<>();
+
+        String query = "SELECT * FROM hotels WHERE totalOccupancy > ?;";
+
+        // Create a connection / Make a prepared statement
+        try(
+                Connection connection = this.basicDataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            // Set parameters for prepared statement
+            preparedStatement.setInt(1, totalOccupancyParam);
+
+            try(
+                    // Execute prepared statement
+                    ResultSet resultSet = preparedStatement.executeQuery();
+            ) {
+                while (resultSet.next()) {
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    int totalFloors = resultSet.getInt("totalFloors");
+                    int totalOccupancy = resultSet.getInt("totalOccupancy");
+
+                    Hotel hotel = new Hotel(id, name, totalFloors, totalOccupancy);
+
+                    hotelsFound.add(hotel);
+                }
+            }
+
+        } catch (SQLException e){
+            e.printStackTrace();
         }
+
+        // return the result
+        return hotelsFound;
     }
 
     public void create(Hotel hotel){

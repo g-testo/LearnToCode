@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c737463-2b99-4d5f-a54b-d03606b4b4b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/exercise.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Workbook7/ComprehensiveHotelExampleReview/src/main/java/com/gt/script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/HotelDataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gt/Main.java" afterDir="false" />
     </list>
@@ -52,8 +55,16 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="HotelProjectConfig" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.HotelConfigLocal">
+    <configuration name="HotelConfigLocal" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.gt.Main" />
+      <module name="WorkingDataManager" />
+      <option name="PROGRAM_PARAMETERS" value="root 12345678" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelConfigRemote" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.gt.Main" />
       <module name="WorkingDataManager" />
       <option name="PROGRAM_PARAMETERS" value="ba4aff20914505 91a8d13d5b3ab0a" />
@@ -61,6 +72,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.HotelConfigRemote" />
+      <item itemvalue="Application.HotelConfigLocal" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

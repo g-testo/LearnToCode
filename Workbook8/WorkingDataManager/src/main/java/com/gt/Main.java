@@ -12,20 +12,23 @@ public class Main {
         String username = args[0];
         String password = args[1];
 
-        basicDataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
+//        basicDataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_4fe1d93c00fe86e?reconnect=true");
+
+        basicDataSource.setUrl("jdbc:mysql://localhost:3306/hotelProject?reconnect=true");
+
         basicDataSource.setUsername(username);
         basicDataSource.setPassword(password);
 
         HotelDataManager hotelDataManager = new HotelDataManager(basicDataSource);
 
-//        List<Hotel> hotels = hotelDataManager.getAll();
-//        System.out.println(hotels);
+        List<Hotel> hotels = hotelDataManager.getAll();
+        System.out.println(hotels);
 
-        // Search by "fun"
 //        List<Hotel> hotels = hotelDataManager.searchByName("fun");
 //        System.out.println(hotels);
 
-
+//        List<Hotel> hotels = hotelDataManager.filterByLargerTotalOccupancy(1000);
+//        System.out.println(hotels);
 
 //        Hotel hotel = hotelDataManager.getById(1);
 //        System.out.println(hotel);
@@ -37,11 +40,6 @@ public class Main {
 //        hotelDataManager.update(14, hotel);
 
 //        hotelDataManager.delete(14);
-
-
-
-
-
 
     }
 }
