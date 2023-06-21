@@ -33,6 +33,7 @@ public class MySqlCatDao implements CatDao {
         List<Cat> cats = new ArrayList<>();
 
         String sql = "SELECT * FROM cats;";
+
         try(
                 Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -40,14 +41,20 @@ public class MySqlCatDao implements CatDao {
         ) {
 
             while(resultSet.next()){
-                System.out.println(resultSet.getString("name"));
+                Long id = resultSet.getLong("id");
+                String name = resultSet.getString("name");
+                String color = resultSet.getString("color");
+                String imageUrl = resultSet.getString("image_url");
+
+                Cat cat = new Cat(id, name, color, imageUrl);
+                cats.add(cat);
             }
 
         } catch(SQLException e){
             e.printStackTrace();
         }
 
-        return null;
+        return cats;
     }
 
     @Override
