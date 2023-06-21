@@ -7,16 +7,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class MySqlCatDao implements CatDao {
-//    private DataSource dataSource;
+    private DataSource dataSource;
 
     @Autowired
     public MySqlCatDao(BasicDataSource dataSource){
-        System.out.println(dataSource.getUrl());
+        this.dataSource = dataSource;
     }
 
     @Override
@@ -29,6 +33,20 @@ public class MySqlCatDao implements CatDao {
         List<Cat> cats = new ArrayList<>();
 
         String sql = "SELECT * FROM cats;";
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                ResultSet resultSet = preparedStatement.executeQuery();
+        ) {
+
+            while(resultSet.next()){
+                System.out.println(resultSet.getString("name"));
+            }
+
+        } catch(SQLException e){
+            e.printStackTrace();
+        }
+
         return null;
     }
 
