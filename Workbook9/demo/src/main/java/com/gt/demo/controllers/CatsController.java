@@ -24,4 +24,9 @@ public class CatsController {
         return catDao.getAll();
     }
 
+    @GetMapping("/{id}")
+    public Cat getCatById(@PathVariable Long id){
+        return catDao.getById(id);
+    }
+
 }

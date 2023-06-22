@@ -41,12 +41,9 @@ public class MySqlCatDao implements CatDao {
         ) {
 
             while(resultSet.next()){
-                Long id = resultSet.getLong("id");
-                String name = resultSet.getString("name");
-                String color = resultSet.getString("color");
-                String imageUrl = resultSet.getString("image_url");
 
-                Cat cat = new Cat(id, name, color, imageUrl);
+                Cat cat = catShaper(resultSet);
+
                 cats.add(cat);
             }
 
@@ -59,6 +56,27 @@ public class MySqlCatDao implements CatDao {
 
     @Override
     public Cat getById(Long id) {
+        String sql = "SELECT * FROM cats WHERE id=?";
+
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ){
+            preparedStatement.setLong(1, id);
+
+            try(
+                ResultSet resultSet = preparedStatement.executeQuery();
+            ){
+                if(resultSet.next()){
+                    Cat cat = catShaper(resultSet);
+                }
+            }
+
+
+        } catch(SQLException e){
+            e.printStackTrace();
+        }
+
         return null;
     }
 
@@ -71,4 +89,14 @@ public class MySqlCatDao implements CatDao {
     public void delete(Long id) {
 
     }
+
+    public Cat catShaper(ResultSet resultSet) throws SQLException {
+        Long id = resultSet.getLong("id");
+        String name = resultSet.getString("name");
+        String color = resultSet.getString("color");
+        String imageUrl = resultSet.getString("image_url");
+        Cat cat = new Cat(id, name, color, imageUrl);
+        return cat;
+    }
+
 }
