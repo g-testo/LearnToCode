@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Kitty Cat Website</title>
+    </head>
+    <body>
+        <h1>Kitty Cats Welcome!!!</h1>
+
+        <div id="catElements"></div>
+        <script>
+            fetch("http://localhost:8080/cats")
+                .then((res) => {
+                    return res.json();
+                })
+                .then((data) => {
+                    for (let i = 0; i < data.length; i++) {
+                        const catEl = document.getElementById("catElements");
+                        const newCatEl = document.createElement("div");
+                        newCatEl.innerHTML = data[i].name;
+                        catEl.append(newCatEl);
+                    }
+                });
+        </script>
+    </body>
+</html>

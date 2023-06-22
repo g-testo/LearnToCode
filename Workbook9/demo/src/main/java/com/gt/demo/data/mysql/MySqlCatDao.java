@@ -106,12 +106,37 @@ public class MySqlCatDao implements CatDao {
 
     @Override
     public void update(Long id, Cat cat) {
+        String sql = "UPDATE cats SET name=?, color=?, image_url=? WHERE id=?";
 
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ){
+            preparedStatement.setString(1, cat.getName());
+            preparedStatement.setString(2, cat.getColor());
+            preparedStatement.setString(3, cat.getImageUrl());
+            preparedStatement.setLong(4, id);
+
+            preparedStatement.executeUpdate();
+
+        } catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void delete(Long id) {
+        String sql = "DELETE FROM cats WHERE id=?";
 
+        try(
+            Connection connection = dataSource.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        ){
+            preparedStatement.setLong(1, id);
+            preparedStatement.executeUpdate();
+        } catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public Cat catShaper(ResultSet resultSet) throws SQLException {
