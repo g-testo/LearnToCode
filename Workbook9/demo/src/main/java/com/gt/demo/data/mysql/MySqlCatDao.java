@@ -68,15 +68,14 @@ public class MySqlCatDao implements CatDao {
                 ResultSet resultSet = preparedStatement.executeQuery();
             ){
                 if(resultSet.next()){
-                    Cat cat = catShaper(resultSet);
+                    return catShaper(resultSet);
+                } else {
+                    System.out.println("Kitty cat not found.");
                 }
             }
-
-
         } catch(SQLException e){
             e.printStackTrace();
         }
-
         return null;
     }
 
