@@ -3,6 +3,7 @@ package com.gt.demo.controllers;
 import com.gt.demo.data.CatDao;
 import com.gt.demo.models.Cat;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,6 +30,10 @@ public class CatsController {
         return catDao.getById(id);
     }
 
-
+    @PostMapping
+    @ResponseStatus(value= HttpStatus.CREATED)
+    public Cat createCat(@RequestBody Cat cat){
+        return catDao.create(cat);
+    }
 
 }

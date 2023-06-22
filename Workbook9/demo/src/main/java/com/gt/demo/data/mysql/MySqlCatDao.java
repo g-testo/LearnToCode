@@ -7,10 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +22,34 @@ public class MySqlCatDao implements CatDao {
 
     @Override
     public Cat create(Cat cat) {
+        String sql = "INSERT INTO cats(name, color, image_url) VALUES(?,?,?);";
+
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        ){
+            preparedStatement.setString(1, cat.getName());
+            preparedStatement.setString(2, cat.getColor());
+            preparedStatement.setString(3, cat.getImageUrl());
+
+            preparedStatement.executeUpdate();
+
+            try (
+                    ResultSet generatedKeys = preparedStatement.getGeneratedKeys()
+            ){
+                if(generatedKeys.next()){
+                    Long id = generatedKeys.getLong(1);
+                    cat.setId(id);
+                    return cat;
+                } else {
+                    System.out.println("Cat creation unsuccessful");
+                }
+            }
+
+
+        } catch(SQLException e){
+            e.printStackTrace();
+        }
         return null;
     }
 
@@ -56,7 +81,7 @@ public class MySqlCatDao implements CatDao {
 
     @Override
     public Cat getById(Long id) {
-        String sql = "SELECT * FROM cats WHERE id=?";
+        String sql = "SELECT * FROM cats WHERE id=?;";
 
         try(
                 Connection connection = dataSource.getConnection();
